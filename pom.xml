@@ -9,27 +9,26 @@
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
-      <build>
- <plugins>
- <plugin>
- <artifactId>maven-jar-plugin</artifactId>
- <version>3.1.0</version>
- <configuration>
- <archive>
- <manifest>
- <addClasspath>true</addClasspath>
- <mainClass>com.example.App</mainClass> 
- </manifest>
- </archive>
- </configuration>
- </plugin>
- </plugins>
- </build>
-
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archieve>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.example.App</mainClass>
+            </manifest>
+          </archieve>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
